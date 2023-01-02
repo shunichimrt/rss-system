@@ -18,7 +18,7 @@ class PostsStore {
     return itemInfoList;
   }
 
-  find(id: number) {
+  find(id: string) {
     return itemInfoList.find((itemInfo) => {
       return itemInfo.id.toString() === id.toString();
     });

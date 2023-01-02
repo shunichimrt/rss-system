@@ -10,4 +10,5 @@ router
   .get('/api/posts/:id', Post)
   .get('*', () => new Response('Not found', { status: 404 }));
 
-export const handleRequest = (request: Request<unknown> | RequestLike) => router.handle(request);
+export const handleRequest = (request: Request<unknown> | RequestLike) =>
+  router.handle(request);
